@@ -1,0 +1,57 @@
+@model demo.Models.AraYayinModel
+
+
+<table class="table table-bordered w-100">
+    <tr class="w-25">
+        <th>Arastirmaci Adi</th>
+        <td>
+           <a href="/Search/Profil/@Model.ArasTek.ArastirmaciId"> @Model.ArasTek.Name</a>
+        </td>
+    </tr>
+     <tr>
+        <th class="w-25">ArastirmaciSoyadi</th>
+        <td>@Model.ArasTek.Soyad</td>
+    </tr>
+     <tr>
+        <th class="w-25">YayinAdi:</th>
+        <td>@Model.YayTek.YayinAdi</td>
+    </tr>
+    <tr>
+        <th class="w-25">YayinYili:</th>
+        <td>@Model.YayTek.YayinYili</td>
+    </tr>
+     <tr>
+        <th class="w-25">YayinYeri:</th>
+        <td>@Model.YayTek.YayinYeri</td>
+    </tr><tr>
+        <th class="w-25">Türü:</th>
+        <td>@Model.YayTek.nodeTur[0].Properties["name"]</td>
+    </tr>
+     <tr>
+        <th class="w-25">Ortaklar:</th>
+        <td>
+            @foreach (var item in Model.YayTek.nodePerson)
+    {
+        if (item.Properties["name"].ToString()==Model.ArasTek.Name)
+        {
+           continue;
+        }
+         <a href="/Search/Profil/@item.Id">@item.Properties["name"]</a>
+    }
+        </td>
+    </tr>
+    
+    
+</table>
+    
+
+
+ 
+
+
+
+
+
+
+
+

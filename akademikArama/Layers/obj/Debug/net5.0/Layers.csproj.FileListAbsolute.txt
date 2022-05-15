@@ -1,0 +1,12 @@
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\Layers.csproj.AssemblyReference.cache
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\Layers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\Layers.AssemblyInfoInputs.cache
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\Layers.AssemblyInfo.cs
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\Layers.csproj.CoreCompileInputs.cache
+C:\Users\90545\Desktop\akademikArama\Layers\bin\Debug\net5.0\Layers.deps.json
+C:\Users\90545\Desktop\akademikArama\Layers\bin\Debug\net5.0\Layers.dll
+C:\Users\90545\Desktop\akademikArama\Layers\bin\Debug\net5.0\ref\Layers.dll
+C:\Users\90545\Desktop\akademikArama\Layers\bin\Debug\net5.0\Layers.pdb
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\Layers.dll
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\ref\Layers.dll
+C:\Users\90545\Desktop\akademikArama\Layers\obj\Debug\net5.0\Layers.pdb

@@ -1,0 +1,113 @@
+@using Layers
+@using System.Collections.Generic
+@* @model List<Yayinlar> *@
+ @* @model List<Arastirmaci>  *@
+    @model demo.Models.AraYayinModel
+
+<form action="/Search/Index" method="post">
+   <div id="box">
+       <input type="text" id="search" placeholder="ara.." name="arananKelime">
+       <i class="fa fa-search"></i>
+   </div>
+   <div class="form-check">
+  <input class="form-check-input" type="radio" name="alan" id="flexRadioDefault1" value="arastirmaci"  >
+  <label class="form-check-label" for="flexRadioDefault1">
+    Araştırmacı Adı
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="alan" id="flexRadioDefault2" value="yayin" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Yayin Adi
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="alan" id="flexRadioDefault2" value="yil" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Yila Gore
+  </label>
+</div>
+</form> 
+
+
+
+ @* @foreach (var item in Model)
+{
+   
+<table class="table table-bordered">
+    <tr>
+        <th>Arastirmaci Adi</th>
+        <td>
+            @foreach (var item2 in item.nodePerson)
+            {   
+               <span> @item2.Properties["name"]</span>
+            }
+        </td>
+    </tr>
+     <tr>
+        <th>ArastirmaciSoyadi</th>
+        <td>@item.</td>
+    </tr>
+     <tr>
+        <th>YayinAdi:</th>
+        <td>@item.YayinAdi</td>
+    </tr>
+    <tr>
+        <th>YayinYili:</th>
+        <td>@item.YayinYili</td>
+    </tr>
+     <tr>
+        <th>YayinYeri:</th>
+        <td>@item.YayinYeri</td>
+    </tr>
+     <tr>
+        <th>Türü:</th>
+        <td>@item.nodeTur[0].Properties["name"]</td>
+    </tr>
+    
+    
+</table>
+    
+}  *@
+
+  
+
+
+
+
+@if (Model.ArastListe!=null)
+{
+    @foreach (var item in Model.ArastListe[0].nodeYayinlar)
+{
+    @await Component.InvokeAsync("SearchBar",new{YayinId=(int)item.Id,ArId=Model.ArastListe[0].ArastirmaciId})
+}
+
+}
+else
+{
+Model.dizi=new List<string>();
+  @foreach (var item in Model.YayinListe)
+  {
+    
+    if(Model.dizi.Contains(item.YayinAdi))
+    {
+      continue;
+    }
+    else{
+      Model.dizi.Add(item.YayinAdi);
+      @await Component.InvokeAsync("SearchBar",new{YayinId=(int)item.YayinId,ArId=(int)item.nodePerson[0].Id})
+    }
+  }
+    
+   
+}
+
+
+
+    
+  
+ 
+   
+  
+  
+ 

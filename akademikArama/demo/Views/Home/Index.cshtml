@@ -1,0 +1,71 @@
+﻿@model Layers.Arastirmaci
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Araştırmacı Kayıt Sayfası</h1>
+   
+</div>
+ @using(Html.BeginForm("Index","Home",FormMethod.Post)){
+     <div class="form-row">
+								<div class="col-md-6 mb-3">
+										<label for="validationCustom01">Ad</label>
+
+									@* <input type="text" class="form-control" id="validationDefault01" name="WriterName" placeholder="" required=""> *@
+									@Html.TextBoxFor(x=>x.Name,new{@class="form-control"})
+									
+									
+								</div>
+								<div class="col-md-6 mb-3">
+										<label for="validationCustom01">Soyad</label>
+
+									@* <input type="text" class="form-control" id="validationDefault01" name="WriterName" placeholder="" required=""> *@
+									@Html.TextBoxFor(x=>x.Soyad,new{@class="form-control"})
+									 
+								</div>
+								<div class="col-md-6 mb-3">
+										<label for="validationCustom02">Yayin Adi</label>
+									@* <input type="email" class="form-control" id="validationDefault02" name="WriterMail" placeholder="" required=""> *@
+									@Html.TextBoxFor(x=>x.Yayinlars.YayinAdi,new{@class="form-control"})
+									
+								</div>
+								
+								<div class="col-md-6 mb-3">
+										<label for="validationCustom02">Yayın Yılı</label>
+									@* <input type="email" class="form-control" id="validationDefault02" name="WriterMail" placeholder="" required=""> *@
+									@Html.TextBoxFor(x=>x.Yayinlars.YayinYili,new{@class="form-control"})
+									
+								</div>
+								<div class="col-md-6 mb-3">
+										<label for="validationCustom02">Türü</label>
+									@* <input type="email" class="form-control" id="validationDefault02" name="WriterMail" placeholder="" required=""> *@
+									@Html.TextBoxFor(x=>x.Yayinlars.Turs.TurAdi,new{@class="form-control"})
+									
+								</div>
+								<div class="col-md-6 mb-3">
+										<label for="validationCustom02">Yayin Yeri</label>
+									@* <input type="email" class="form-control" id="validationDefault02" name="WriterMail" placeholder="" required=""> *@
+									@Html.TextBoxFor(x=>x.Yayinlars.YayinYeri,new{@class="form-control"})
+									
+								</div>
+								
+						
+							</div>
+							<button type="submit" class="btn btn-primary submit mb-4">Kayıt Ol</button>
+								<p>
+									<a href="#" id="btn1">Tüm şartları okudum,kabul ediyorum.</a>
+                                    
+								</p>
+ }
+
+ <script>
+	 $(function() {
+  $('.dropdown-menu a').click(function() {
+    console.log($(this).attr('data-value'));
+	console.log("zaaaaass")
+    $(this).closest('.dropdown').find('input.countrycode')
+      .val('(' + $(this).attr('data-value') + ')');
+  });
+});
+ </script>

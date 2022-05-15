@@ -1,0 +1,15 @@
+@model Layers.Arastirmaci
+@{
+    ViewData["Title"] = "Profil";
+}
+
+
+
+
+<h4 class="text-center my-5">@Model.Name @Model.Soyad Çalışmaları</h4>
+<a href="/Search/Cizge/@Model.ArastirmaciId" class="btn btn-success">Çizge Yapısı</a>
+
+@foreach (var item in Model.nodeYayinlar)
+{
+     @await Component.InvokeAsync("SearchBar",new{YayinId=(int)item.Id,ArId=Model.ArastirmaciId})
+}

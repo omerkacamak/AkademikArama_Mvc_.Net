@@ -1,0 +1,15 @@
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\bin\Debug\net5.0\Neo4jDatabase.deps.json
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\bin\Debug\net5.0\Neo4jDatabase.dll
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\bin\Debug\net5.0\ref\Neo4jDatabase.dll
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\bin\Debug\net5.0\Neo4jDatabase.pdb
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.csproj.AssemblyReference.cache
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.AssemblyInfoInputs.cache
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.AssemblyInfo.cs
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.csproj.CoreCompileInputs.cache
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.dll
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\ref\Neo4jDatabase.dll
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.pdb
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\bin\Debug\net5.0\Layers.dll
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\bin\Debug\net5.0\Layers.pdb
+C:\Users\90545\Desktop\akademikArama\Neo4jDatabase\obj\Debug\net5.0\Neo4jDatabase.csproj.CopyComplete
