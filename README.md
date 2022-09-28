@@ -1,7 +1,7 @@
 # AkademikArama
 
 
-Bu web uygulasında Akademik çalışmaların bulunduğu bir web sayfası bulunmaktadır.Admin panelimiz sayesinde bu  web sayfasına veri girişi yapılabilmektedir.Kullanıcı panelinde bulunan arama motoru sayesinde giriş yapan kullanıcıların istediği özelliği seçerek ilgili araştırma çalışmalarına ulaşabilmektedir. Bu bağlamda algoritmalar tasarlanılmış olup yine bu bağlamda uygulama arayüzü ve arayüzleri tasarlanmıştır.
+Bu web uygulasında Akademik çalışmaların bulunduğu bir web sayfası bulunmaktadır.Admin panelimiz sayesinde bu  web sayfasına veri girişi yapılabilmektedir.Kullanıcı panelinde bulunan arama motoru sayesinde giriş yapan kullanıcıların istediği özelliği seçerek ilgili araştırma çalışmalarına ulaşabilmektedir. Bu bağlamda algoritmalar tasarlanılmış olup yine bu bağlamda uygulama arayüzü ve arayüzleri tasarlanmıştır. .Net Core Teknolojisinden kullanılmıştır.
 
 
 
